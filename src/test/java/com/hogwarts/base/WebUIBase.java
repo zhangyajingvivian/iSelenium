@@ -53,6 +53,7 @@ public abstract class WebUIBase {
             System.setProperty("webdriver.chrome.driver", chromePath);
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless");
+            chromeOptions.addArguments("–no-sandbox");
             driver = new ChromeDriver(chromeOptions);
         } else {
             System.setProperty("webdriver.gecko.driver", firefoxPath);
