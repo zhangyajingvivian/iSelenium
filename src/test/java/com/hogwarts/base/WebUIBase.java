@@ -55,7 +55,7 @@ public abstract class WebUIBase {
             chromeOptions.addArguments("--headless");
             chromeOptions.addArguments("-–no-sandbox");
             //chromeOptions.addArguments("blink-settings=imagesEnabled=false");
-            //chromeOptions.addArguments("-–disable-gpu");
+            chromeOptions.addArguments("-–disable-gpu");
             driver = new ChromeDriver(chromeOptions);
         } else {
             System.setProperty("webdriver.gecko.driver", firefoxPath);
